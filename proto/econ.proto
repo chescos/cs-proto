@@ -4,6 +4,7 @@ syntax = "proto3";
 // Generate PHP files with: protoc --experimental_allow_proto3_optional --php_out=./src ./proto/econ.proto
 
 option php_namespace = "Chescos\\CsProto";
+option php_metadata_namespace = "Chescos\\CsProto";
 
 message CEconItemPreviewDataBlock {
 	message Sticker {

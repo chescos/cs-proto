@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 // Cut down version of cstrike15_gcmessages.proto.
-// Generate PHP files with: protoc --experimental_allow_proto3_optional --php_out=./proto ./proto/econ.proto
+// Generate PHP files with: protoc --experimental_allow_proto3_optional --php_out=./src ./proto/econ.proto
 
 message CEconItemPreviewDataBlock {
 	message Sticker {

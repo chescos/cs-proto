@@ -53,7 +53,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \Chescos\CsProto\Econ::initOnce();
+        \Chescos\CsProto\Metadata\Econ::initOnce();
         parent::__construct($data);
     }
 

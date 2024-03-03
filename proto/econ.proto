@@ -1,10 +1,8 @@
 syntax = "proto3";
 
-// Cut down version of cstrike15_gcmessages.proto.
-// Generate PHP files with: protoc --experimental_allow_proto3_optional --php_out=./src ./proto/econ.proto
-
+// This is a cut down version of `cstrike15_gcmessages.proto`.
 option php_namespace = "Chescos\\CsProto";
-option php_metadata_namespace = "Chescos\\CsProto";
+option php_metadata_namespace = "Chescos\\CsProto\\Metadata";
 
 message CEconItemPreviewDataBlock {
 	message Sticker {

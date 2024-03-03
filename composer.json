@@ -1,0 +1,12 @@
+{
+    "name": "chescos/cs-proto",
+    "type": "library",
+    "require": {
+        "google/protobuf": "^3.25"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chescos\\CsProto\\": "src/"
+        }
+    }
+}

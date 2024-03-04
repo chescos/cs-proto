@@ -37,6 +37,14 @@ class Sticker extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>uint32 tint_id = 6;</code>
      */
     protected $tint_id = null;
+    /**
+     * Generated from protobuf field <code>float offset_x = 7;</code>
+     */
+    protected $offset_x = null;
+    /**
+     * Generated from protobuf field <code>float offset_y = 8;</code>
+     */
+    protected $offset_y = null;
 
     /**
      * Constructor.
@@ -50,6 +58,8 @@ class Sticker extends \Google\Protobuf\Internal\Message
      *     @type float $scale
      *     @type float $rotation
      *     @type int $tint_id
+     *     @type float $offset_x
+     *     @type float $offset_y
      * }
      */
     public function __construct($data = NULL) {
@@ -245,6 +255,70 @@ class Sticker extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->tint_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>float offset_x = 7;</code>
+     * @return float
+     */
+    public function getOffsetX()
+    {
+        return isset($this->offset_x) ? $this->offset_x : 0.0;
+    }
+
+    public function hasOffsetX()
+    {
+        return isset($this->offset_x);
+    }
+
+    public function clearOffsetX()
+    {
+        unset($this->offset_x);
+    }
+
+    /**
+     * Generated from protobuf field <code>float offset_x = 7;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setOffsetX($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->offset_x = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>float offset_y = 8;</code>
+     * @return float
+     */
+    public function getOffsetY()
+    {
+        return isset($this->offset_y) ? $this->offset_y : 0.0;
+    }
+
+    public function hasOffsetY()
+    {
+        return isset($this->offset_y);
+    }
+
+    public function clearOffsetY()
+    {
+        unset($this->offset_y);
+    }
+
+    /**
+     * Generated from protobuf field <code>float offset_y = 8;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setOffsetY($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->offset_y = $var;
 
         return $this;
     }

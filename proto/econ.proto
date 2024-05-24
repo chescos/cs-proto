@@ -34,4 +34,5 @@ message CEconItemPreviewDataBlock {
 	optional uint32 dropreason = 16;
 	optional uint32 musicindex = 17;
 	optional int32 entindex = 18;
+	optional uint32 petindex = 19;
 }

@@ -14,35 +14,35 @@ use Google\Protobuf\Internal\GPBUtil;
 class Sticker extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>uint32 slot = 1;</code>
+     * Generated from protobuf field <code>optional uint32 slot = 1;</code>
      */
     protected $slot = null;
     /**
-     * Generated from protobuf field <code>uint32 sticker_id = 2;</code>
+     * Generated from protobuf field <code>optional uint32 sticker_id = 2;</code>
      */
     protected $sticker_id = null;
     /**
-     * Generated from protobuf field <code>float wear = 3;</code>
+     * Generated from protobuf field <code>optional float wear = 3;</code>
      */
     protected $wear = null;
     /**
-     * Generated from protobuf field <code>float scale = 4;</code>
+     * Generated from protobuf field <code>optional float scale = 4;</code>
      */
     protected $scale = null;
     /**
-     * Generated from protobuf field <code>float rotation = 5;</code>
+     * Generated from protobuf field <code>optional float rotation = 5;</code>
      */
     protected $rotation = null;
     /**
-     * Generated from protobuf field <code>uint32 tint_id = 6;</code>
+     * Generated from protobuf field <code>optional uint32 tint_id = 6;</code>
      */
     protected $tint_id = null;
     /**
-     * Generated from protobuf field <code>float offset_x = 7;</code>
+     * Generated from protobuf field <code>optional float offset_x = 7;</code>
      */
     protected $offset_x = null;
     /**
-     * Generated from protobuf field <code>float offset_y = 8;</code>
+     * Generated from protobuf field <code>optional float offset_y = 8;</code>
      */
     protected $offset_y = null;
 
@@ -68,7 +68,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 slot = 1;</code>
+     * Generated from protobuf field <code>optional uint32 slot = 1;</code>
      * @return int
      */
     public function getSlot()
@@ -87,7 +87,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 slot = 1;</code>
+     * Generated from protobuf field <code>optional uint32 slot = 1;</code>
      * @param int $var
      * @return $this
      */
@@ -100,7 +100,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 sticker_id = 2;</code>
+     * Generated from protobuf field <code>optional uint32 sticker_id = 2;</code>
      * @return int
      */
     public function getStickerId()
@@ -119,7 +119,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 sticker_id = 2;</code>
+     * Generated from protobuf field <code>optional uint32 sticker_id = 2;</code>
      * @param int $var
      * @return $this
      */
@@ -132,7 +132,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float wear = 3;</code>
+     * Generated from protobuf field <code>optional float wear = 3;</code>
      * @return float
      */
     public function getWear()
@@ -151,7 +151,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float wear = 3;</code>
+     * Generated from protobuf field <code>optional float wear = 3;</code>
      * @param float $var
      * @return $this
      */
@@ -164,7 +164,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float scale = 4;</code>
+     * Generated from protobuf field <code>optional float scale = 4;</code>
      * @return float
      */
     public function getScale()
@@ -183,7 +183,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float scale = 4;</code>
+     * Generated from protobuf field <code>optional float scale = 4;</code>
      * @param float $var
      * @return $this
      */
@@ -196,7 +196,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float rotation = 5;</code>
+     * Generated from protobuf field <code>optional float rotation = 5;</code>
      * @return float
      */
     public function getRotation()
@@ -215,7 +215,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float rotation = 5;</code>
+     * Generated from protobuf field <code>optional float rotation = 5;</code>
      * @param float $var
      * @return $this
      */
@@ -228,7 +228,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 tint_id = 6;</code>
+     * Generated from protobuf field <code>optional uint32 tint_id = 6;</code>
      * @return int
      */
     public function getTintId()
@@ -247,7 +247,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 tint_id = 6;</code>
+     * Generated from protobuf field <code>optional uint32 tint_id = 6;</code>
      * @param int $var
      * @return $this
      */
@@ -260,7 +260,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float offset_x = 7;</code>
+     * Generated from protobuf field <code>optional float offset_x = 7;</code>
      * @return float
      */
     public function getOffsetX()
@@ -279,7 +279,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float offset_x = 7;</code>
+     * Generated from protobuf field <code>optional float offset_x = 7;</code>
      * @param float $var
      * @return $this
      */
@@ -292,7 +292,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float offset_y = 8;</code>
+     * Generated from protobuf field <code>optional float offset_y = 8;</code>
      * @return float
      */
     public function getOffsetY()
@@ -311,7 +311,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>float offset_y = 8;</code>
+     * Generated from protobuf field <code>optional float offset_y = 8;</code>
      * @param float $var
      * @return $this
      */

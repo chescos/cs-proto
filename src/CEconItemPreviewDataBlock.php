@@ -14,47 +14,47 @@ use Google\Protobuf\Internal\GPBUtil;
 class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>uint32 accountid = 1;</code>
+     * Generated from protobuf field <code>optional uint32 accountid = 1;</code>
      */
     protected $accountid = null;
     /**
-     * Generated from protobuf field <code>uint64 itemid = 2;</code>
+     * Generated from protobuf field <code>optional uint64 itemid = 2;</code>
      */
     protected $itemid = null;
     /**
-     * Generated from protobuf field <code>uint32 defindex = 3;</code>
+     * Generated from protobuf field <code>optional uint32 defindex = 3;</code>
      */
     protected $defindex = null;
     /**
-     * Generated from protobuf field <code>uint32 paintindex = 4;</code>
+     * Generated from protobuf field <code>optional uint32 paintindex = 4;</code>
      */
     protected $paintindex = null;
     /**
-     * Generated from protobuf field <code>uint32 rarity = 5;</code>
+     * Generated from protobuf field <code>optional uint32 rarity = 5;</code>
      */
     protected $rarity = null;
     /**
-     * Generated from protobuf field <code>uint32 quality = 6;</code>
+     * Generated from protobuf field <code>optional uint32 quality = 6;</code>
      */
     protected $quality = null;
     /**
-     * Generated from protobuf field <code>uint32 paintwear = 7;</code>
+     * Generated from protobuf field <code>optional uint32 paintwear = 7;</code>
      */
     protected $paintwear = null;
     /**
-     * Generated from protobuf field <code>uint32 paintseed = 8;</code>
+     * Generated from protobuf field <code>optional uint32 paintseed = 8;</code>
      */
     protected $paintseed = null;
     /**
-     * Generated from protobuf field <code>uint32 killeaterscoretype = 9;</code>
+     * Generated from protobuf field <code>optional uint32 killeaterscoretype = 9;</code>
      */
     protected $killeaterscoretype = null;
     /**
-     * Generated from protobuf field <code>uint32 killeatervalue = 10;</code>
+     * Generated from protobuf field <code>optional uint32 killeatervalue = 10;</code>
      */
     protected $killeatervalue = null;
     /**
-     * Generated from protobuf field <code>string customname = 11;</code>
+     * Generated from protobuf field <code>optional string customname = 11;</code>
      */
     protected $customname = null;
     /**
@@ -62,29 +62,33 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      */
     private $stickers;
     /**
-     * Generated from protobuf field <code>uint32 inventory = 13;</code>
+     * Generated from protobuf field <code>optional uint32 inventory = 13;</code>
      */
     protected $inventory = null;
     /**
-     * Generated from protobuf field <code>uint32 origin = 14;</code>
+     * Generated from protobuf field <code>optional uint32 origin = 14;</code>
      */
     protected $origin = null;
     /**
-     * Generated from protobuf field <code>uint32 questid = 15;</code>
+     * Generated from protobuf field <code>optional uint32 questid = 15;</code>
      */
     protected $questid = null;
     /**
-     * Generated from protobuf field <code>uint32 dropreason = 16;</code>
+     * Generated from protobuf field <code>optional uint32 dropreason = 16;</code>
      */
     protected $dropreason = null;
     /**
-     * Generated from protobuf field <code>uint32 musicindex = 17;</code>
+     * Generated from protobuf field <code>optional uint32 musicindex = 17;</code>
      */
     protected $musicindex = null;
     /**
-     * Generated from protobuf field <code>int32 entindex = 18;</code>
+     * Generated from protobuf field <code>optional int32 entindex = 18;</code>
      */
     protected $entindex = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 petindex = 19;</code>
+     */
+    protected $petindex = null;
 
     /**
      * Constructor.
@@ -103,13 +107,14 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      *     @type int $killeaterscoretype
      *     @type int $killeatervalue
      *     @type string $customname
-     *     @type \Chescos\CsProto\CEconItemPreviewDataBlock\Sticker[]|\Google\Protobuf\Internal\RepeatedField $stickers
+     *     @type array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $stickers
      *     @type int $inventory
      *     @type int $origin
      *     @type int $questid
      *     @type int $dropreason
      *     @type int $musicindex
      *     @type int $entindex
+     *     @type int $petindex
      * }
      */
     public function __construct($data = NULL) {
@@ -118,7 +123,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 accountid = 1;</code>
+     * Generated from protobuf field <code>optional uint32 accountid = 1;</code>
      * @return int
      */
     public function getAccountid()
@@ -137,7 +142,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 accountid = 1;</code>
+     * Generated from protobuf field <code>optional uint32 accountid = 1;</code>
      * @param int $var
      * @return $this
      */
@@ -150,7 +155,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 itemid = 2;</code>
+     * Generated from protobuf field <code>optional uint64 itemid = 2;</code>
      * @return int|string
      */
     public function getItemid()
@@ -169,7 +174,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint64 itemid = 2;</code>
+     * Generated from protobuf field <code>optional uint64 itemid = 2;</code>
      * @param int|string $var
      * @return $this
      */
@@ -182,7 +187,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 defindex = 3;</code>
+     * Generated from protobuf field <code>optional uint32 defindex = 3;</code>
      * @return int
      */
     public function getDefindex()
@@ -201,7 +206,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 defindex = 3;</code>
+     * Generated from protobuf field <code>optional uint32 defindex = 3;</code>
      * @param int $var
      * @return $this
      */
@@ -214,7 +219,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 paintindex = 4;</code>
+     * Generated from protobuf field <code>optional uint32 paintindex = 4;</code>
      * @return int
      */
     public function getPaintindex()
@@ -233,7 +238,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 paintindex = 4;</code>
+     * Generated from protobuf field <code>optional uint32 paintindex = 4;</code>
      * @param int $var
      * @return $this
      */
@@ -246,7 +251,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 rarity = 5;</code>
+     * Generated from protobuf field <code>optional uint32 rarity = 5;</code>
      * @return int
      */
     public function getRarity()
@@ -265,7 +270,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 rarity = 5;</code>
+     * Generated from protobuf field <code>optional uint32 rarity = 5;</code>
      * @param int $var
      * @return $this
      */
@@ -278,7 +283,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 quality = 6;</code>
+     * Generated from protobuf field <code>optional uint32 quality = 6;</code>
      * @return int
      */
     public function getQuality()
@@ -297,7 +302,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 quality = 6;</code>
+     * Generated from protobuf field <code>optional uint32 quality = 6;</code>
      * @param int $var
      * @return $this
      */
@@ -310,7 +315,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 paintwear = 7;</code>
+     * Generated from protobuf field <code>optional uint32 paintwear = 7;</code>
      * @return int
      */
     public function getPaintwear()
@@ -329,7 +334,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 paintwear = 7;</code>
+     * Generated from protobuf field <code>optional uint32 paintwear = 7;</code>
      * @param int $var
      * @return $this
      */
@@ -342,7 +347,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 paintseed = 8;</code>
+     * Generated from protobuf field <code>optional uint32 paintseed = 8;</code>
      * @return int
      */
     public function getPaintseed()
@@ -361,7 +366,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 paintseed = 8;</code>
+     * Generated from protobuf field <code>optional uint32 paintseed = 8;</code>
      * @param int $var
      * @return $this
      */
@@ -374,7 +379,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 killeaterscoretype = 9;</code>
+     * Generated from protobuf field <code>optional uint32 killeaterscoretype = 9;</code>
      * @return int
      */
     public function getKilleaterscoretype()
@@ -393,7 +398,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 killeaterscoretype = 9;</code>
+     * Generated from protobuf field <code>optional uint32 killeaterscoretype = 9;</code>
      * @param int $var
      * @return $this
      */
@@ -406,7 +411,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 killeatervalue = 10;</code>
+     * Generated from protobuf field <code>optional uint32 killeatervalue = 10;</code>
      * @return int
      */
     public function getKilleatervalue()
@@ -425,7 +430,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 killeatervalue = 10;</code>
+     * Generated from protobuf field <code>optional uint32 killeatervalue = 10;</code>
      * @param int $var
      * @return $this
      */
@@ -438,7 +443,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string customname = 11;</code>
+     * Generated from protobuf field <code>optional string customname = 11;</code>
      * @return string
      */
     public function getCustomname()
@@ -457,7 +462,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string customname = 11;</code>
+     * Generated from protobuf field <code>optional string customname = 11;</code>
      * @param string $var
      * @return $this
      */
@@ -480,7 +485,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker stickers = 12;</code>
-     * @param \Chescos\CsProto\CEconItemPreviewDataBlock\Sticker[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setStickers($var)
@@ -492,7 +497,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 inventory = 13;</code>
+     * Generated from protobuf field <code>optional uint32 inventory = 13;</code>
      * @return int
      */
     public function getInventory()
@@ -511,7 +516,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 inventory = 13;</code>
+     * Generated from protobuf field <code>optional uint32 inventory = 13;</code>
      * @param int $var
      * @return $this
      */
@@ -524,7 +529,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 origin = 14;</code>
+     * Generated from protobuf field <code>optional uint32 origin = 14;</code>
      * @return int
      */
     public function getOrigin()
@@ -543,7 +548,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 origin = 14;</code>
+     * Generated from protobuf field <code>optional uint32 origin = 14;</code>
      * @param int $var
      * @return $this
      */
@@ -556,7 +561,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 questid = 15;</code>
+     * Generated from protobuf field <code>optional uint32 questid = 15;</code>
      * @return int
      */
     public function getQuestid()
@@ -575,7 +580,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 questid = 15;</code>
+     * Generated from protobuf field <code>optional uint32 questid = 15;</code>
      * @param int $var
      * @return $this
      */
@@ -588,7 +593,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 dropreason = 16;</code>
+     * Generated from protobuf field <code>optional uint32 dropreason = 16;</code>
      * @return int
      */
     public function getDropreason()
@@ -607,7 +612,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 dropreason = 16;</code>
+     * Generated from protobuf field <code>optional uint32 dropreason = 16;</code>
      * @param int $var
      * @return $this
      */
@@ -620,7 +625,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 musicindex = 17;</code>
+     * Generated from protobuf field <code>optional uint32 musicindex = 17;</code>
      * @return int
      */
     public function getMusicindex()
@@ -639,7 +644,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>uint32 musicindex = 17;</code>
+     * Generated from protobuf field <code>optional uint32 musicindex = 17;</code>
      * @param int $var
      * @return $this
      */
@@ -652,7 +657,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 entindex = 18;</code>
+     * Generated from protobuf field <code>optional int32 entindex = 18;</code>
      * @return int
      */
     public function getEntindex()
@@ -671,7 +676,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 entindex = 18;</code>
+     * Generated from protobuf field <code>optional int32 entindex = 18;</code>
      * @param int $var
      * @return $this
      */
@@ -679,6 +684,38 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->entindex = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 petindex = 19;</code>
+     * @return int
+     */
+    public function getPetindex()
+    {
+        return isset($this->petindex) ? $this->petindex : 0;
+    }
+
+    public function hasPetindex()
+    {
+        return isset($this->petindex);
+    }
+
+    public function clearPetindex()
+    {
+        unset($this->petindex);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 petindex = 19;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPetindex($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->petindex = $var;
 
         return $this;
     }

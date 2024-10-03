@@ -89,6 +89,10 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional uint32 petindex = 19;</code>
      */
     protected $petindex = null;
+    /**
+     * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker keychains = 20;</code>
+     */
+    private $keychains;
 
     /**
      * Constructor.
@@ -115,6 +119,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      *     @type int $musicindex
      *     @type int $entindex
      *     @type int $petindex
+     *     @type array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $keychains
      * }
      */
     public function __construct($data = NULL) {
@@ -716,6 +721,28 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->petindex = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker keychains = 20;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getKeychains()
+    {
+        return $this->keychains;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker keychains = 20;</code>
+     * @param array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setKeychains($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Chescos\CsProto\CEconItemPreviewDataBlock\Sticker::class);
+        $this->keychains = $arr;
 
         return $this;
     }

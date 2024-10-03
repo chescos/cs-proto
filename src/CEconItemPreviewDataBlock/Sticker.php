@@ -45,6 +45,14 @@ class Sticker extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional float offset_y = 8;</code>
      */
     protected $offset_y = null;
+    /**
+     * Generated from protobuf field <code>optional float offset_z = 9;</code>
+     */
+    protected $offset_z = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 pattern = 10;</code>
+     */
+    protected $pattern = null;
 
     /**
      * Constructor.
@@ -60,6 +68,8 @@ class Sticker extends \Google\Protobuf\Internal\Message
      *     @type int $tint_id
      *     @type float $offset_x
      *     @type float $offset_y
+     *     @type float $offset_z
+     *     @type int $pattern
      * }
      */
     public function __construct($data = NULL) {
@@ -319,6 +329,70 @@ class Sticker extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkFloat($var);
         $this->offset_y = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional float offset_z = 9;</code>
+     * @return float
+     */
+    public function getOffsetZ()
+    {
+        return isset($this->offset_z) ? $this->offset_z : 0.0;
+    }
+
+    public function hasOffsetZ()
+    {
+        return isset($this->offset_z);
+    }
+
+    public function clearOffsetZ()
+    {
+        unset($this->offset_z);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional float offset_z = 9;</code>
+     * @param float $var
+     * @return $this
+     */
+    public function setOffsetZ($var)
+    {
+        GPBUtil::checkFloat($var);
+        $this->offset_z = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 pattern = 10;</code>
+     * @return int
+     */
+    public function getPattern()
+    {
+        return isset($this->pattern) ? $this->pattern : 0;
+    }
+
+    public function hasPattern()
+    {
+        return isset($this->pattern);
+    }
+
+    public function clearPattern()
+    {
+        unset($this->pattern);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 pattern = 10;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPattern($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->pattern = $var;
 
         return $this;
     }

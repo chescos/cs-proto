@@ -93,6 +93,18 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker keychains = 20;</code>
      */
     private $keychains;
+    /**
+     * Generated from protobuf field <code>optional uint32 style = 21;</code>
+     */
+    protected $style = null;
+    /**
+     * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker variations = 22;</code>
+     */
+    private $variations;
+    /**
+     * Generated from protobuf field <code>optional uint32 upgrade_level = 23;</code>
+     */
+    protected $upgrade_level = null;
 
     /**
      * Constructor.
@@ -120,6 +132,9 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      *     @type int $entindex
      *     @type int $petindex
      *     @type array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $keychains
+     *     @type int $style
+     *     @type array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $variations
+     *     @type int $upgrade_level
      * }
      */
     public function __construct($data = NULL) {
@@ -743,6 +758,92 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Chescos\CsProto\CEconItemPreviewDataBlock\Sticker::class);
         $this->keychains = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 style = 21;</code>
+     * @return int
+     */
+    public function getStyle()
+    {
+        return isset($this->style) ? $this->style : 0;
+    }
+
+    public function hasStyle()
+    {
+        return isset($this->style);
+    }
+
+    public function clearStyle()
+    {
+        unset($this->style);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 style = 21;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setStyle($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->style = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker variations = 22;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getVariations()
+    {
+        return $this->variations;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker variations = 22;</code>
+     * @param array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setVariations($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Chescos\CsProto\CEconItemPreviewDataBlock\Sticker::class);
+        $this->variations = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 upgrade_level = 23;</code>
+     * @return int
+     */
+    public function getUpgradeLevel()
+    {
+        return isset($this->upgrade_level) ? $this->upgrade_level : 0;
+    }
+
+    public function hasUpgradeLevel()
+    {
+        return isset($this->upgrade_level);
+    }
+
+    public function clearUpgradeLevel()
+    {
+        unset($this->upgrade_level);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 upgrade_level = 23;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setUpgradeLevel($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->upgrade_level = $var;
 
         return $this;
     }

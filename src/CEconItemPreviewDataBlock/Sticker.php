@@ -53,6 +53,10 @@ class Sticker extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional uint32 pattern = 10;</code>
      */
     protected $pattern = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 highlight_reel = 11;</code>
+     */
+    protected $highlight_reel = null;
 
     /**
      * Constructor.
@@ -70,6 +74,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
      *     @type float $offset_y
      *     @type float $offset_z
      *     @type int $pattern
+     *     @type int $highlight_reel
      * }
      */
     public function __construct($data = NULL) {
@@ -393,6 +398,38 @@ class Sticker extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->pattern = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 highlight_reel = 11;</code>
+     * @return int
+     */
+    public function getHighlightReel()
+    {
+        return isset($this->highlight_reel) ? $this->highlight_reel : 0;
+    }
+
+    public function hasHighlightReel()
+    {
+        return isset($this->highlight_reel);
+    }
+
+    public function clearHighlightReel()
+    {
+        unset($this->highlight_reel);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 highlight_reel = 11;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setHighlightReel($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->highlight_reel = $var;
 
         return $this;
     }

@@ -6,18 +6,18 @@ option php_namespace = "Chescos\\CsProto";
 option php_metadata_namespace = "Chescos\\CsProto\\Metadata";
 
 message CEconItemPreviewDataBlock {
-	message Sticker {
-    	optional uint32 slot = 1;
-    	optional uint32 sticker_id = 2;
-    	optional float wear = 3;
-    	optional float scale = 4;
-    	optional float rotation = 5;
-    	optional uint32 tint_id = 6;
-    	optional float offset_x = 7;
-    	optional float offset_y = 8;
-    	optional float offset_z = 9;
-    	optional uint32 pattern = 10;
-    	optional uint32 highlight_reel = 11;
+    message Sticker {
+        optional uint32 slot = 1;
+        optional uint32 sticker_id = 2;
+        optional float wear = 3;
+        optional float scale = 4;
+        optional float rotation = 5;
+        optional uint32 tint_id = 6;
+        optional float offset_x = 7;
+        optional float offset_y = 8;
+        optional float offset_z = 9;
+        optional uint32 pattern = 10;
+        optional uint32 highlight_reel = 11;
     }
 
     optional uint32 accountid = 1;

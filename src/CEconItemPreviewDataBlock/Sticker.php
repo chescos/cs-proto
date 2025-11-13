@@ -57,6 +57,10 @@ class Sticker extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional uint32 highlight_reel = 11;</code>
      */
     protected $highlight_reel = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 wrapped_sticker = 12;</code>
+     */
+    protected $wrapped_sticker = null;
 
     /**
      * Constructor.
@@ -75,6 +79,7 @@ class Sticker extends \Google\Protobuf\Internal\Message
      *     @type float $offset_z
      *     @type int $pattern
      *     @type int $highlight_reel
+     *     @type int $wrapped_sticker
      * }
      */
     public function __construct($data = NULL) {
@@ -430,6 +435,38 @@ class Sticker extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->highlight_reel = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 wrapped_sticker = 12;</code>
+     * @return int
+     */
+    public function getWrappedSticker()
+    {
+        return isset($this->wrapped_sticker) ? $this->wrapped_sticker : 0;
+    }
+
+    public function hasWrappedSticker()
+    {
+        return isset($this->wrapped_sticker);
+    }
+
+    public function clearWrappedSticker()
+    {
+        unset($this->wrapped_sticker);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 wrapped_sticker = 12;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setWrappedSticker($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->wrapped_sticker = $var;
 
         return $this;
     }

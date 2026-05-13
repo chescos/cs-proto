@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+// This has been created with AI, based on the `assetproperty` query parameter on the Steam Community Market.
+
+option php_namespace = "Chescos\\CsProto";
+option php_metadata_namespace = "Chescos\\CsProto\\Metadata";
+
+message MarketAssetPropertyFilter {
+  optional uint32 property_id = 1;
+
+  optional float float_min = 2;
+  optional float float_max = 3;
+
+  optional int64 int_min = 4;
+  optional int64 int_max = 5;
+}

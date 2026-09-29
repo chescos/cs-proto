@@ -54,9 +54,9 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      */
     protected $killeatervalue = null;
     /**
-     * Generated from protobuf field <code>optional string customname = 11;</code>
+     * Generated from protobuf field <code>repeated string customnames = 11;</code>
      */
-    protected $customname = null;
+    private $customnames;
     /**
      * Generated from protobuf field <code>repeated .CEconItemPreviewDataBlock.Sticker stickers = 12;</code>
      */
@@ -105,6 +105,14 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional uint32 upgrade_level = 23;</code>
      */
     protected $upgrade_level = null;
+    /**
+     * Generated from protobuf field <code>optional uint32 pet_food_expiration_date = 24;</code>
+     */
+    protected $pet_food_expiration_date = null;
+    /**
+     * Generated from protobuf field <code>optional bytes blobdata = 25;</code>
+     */
+    protected $blobdata = null;
 
     /**
      * Constructor.
@@ -122,7 +130,7 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      *     @type int $paintseed
      *     @type int $killeaterscoretype
      *     @type int $killeatervalue
-     *     @type string $customname
+     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $customnames
      *     @type array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $stickers
      *     @type int $inventory
      *     @type int $origin
@@ -135,6 +143,8 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
      *     @type int $style
      *     @type array<\Chescos\CsProto\CEconItemPreviewDataBlock\Sticker>|\Google\Protobuf\Internal\RepeatedField $variations
      *     @type int $upgrade_level
+     *     @type int $pet_food_expiration_date
+     *     @type string $blobdata
      * }
      */
     public function __construct($data = NULL) {
@@ -463,33 +473,23 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string customname = 11;</code>
-     * @return string
+     * Generated from protobuf field <code>repeated string customnames = 11;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
      */
-    public function getCustomname()
+    public function getCustomnames()
     {
-        return isset($this->customname) ? $this->customname : '';
-    }
-
-    public function hasCustomname()
-    {
-        return isset($this->customname);
-    }
-
-    public function clearCustomname()
-    {
-        unset($this->customname);
+        return $this->customnames;
     }
 
     /**
-     * Generated from protobuf field <code>optional string customname = 11;</code>
-     * @param string $var
+     * Generated from protobuf field <code>repeated string customnames = 11;</code>
+     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
-    public function setCustomname($var)
+    public function setCustomnames($var)
     {
-        GPBUtil::checkString($var, True);
-        $this->customname = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->customnames = $arr;
 
         return $this;
     }
@@ -844,6 +844,70 @@ class CEconItemPreviewDataBlock extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkUint32($var);
         $this->upgrade_level = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 pet_food_expiration_date = 24;</code>
+     * @return int
+     */
+    public function getPetFoodExpirationDate()
+    {
+        return isset($this->pet_food_expiration_date) ? $this->pet_food_expiration_date : 0;
+    }
+
+    public function hasPetFoodExpirationDate()
+    {
+        return isset($this->pet_food_expiration_date);
+    }
+
+    public function clearPetFoodExpirationDate()
+    {
+        unset($this->pet_food_expiration_date);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional uint32 pet_food_expiration_date = 24;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPetFoodExpirationDate($var)
+    {
+        GPBUtil::checkUint32($var);
+        $this->pet_food_expiration_date = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bytes blobdata = 25;</code>
+     * @return string
+     */
+    public function getBlobdata()
+    {
+        return isset($this->blobdata) ? $this->blobdata : '';
+    }
+
+    public function hasBlobdata()
+    {
+        return isset($this->blobdata);
+    }
+
+    public function clearBlobdata()
+    {
+        unset($this->blobdata);
+    }
+
+    /**
+     * Generated from protobuf field <code>optional bytes blobdata = 25;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setBlobdata($var)
+    {
+        GPBUtil::checkString($var, False);
+        $this->blobdata = $var;
 
         return $this;
     }
